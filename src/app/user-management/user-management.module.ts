@@ -18,7 +18,6 @@ const routes: Routes = [
    UserManagementComponent
   ],
   imports: [
-    
     CommonModule,
     HttpClientModule,
     FormsModule,

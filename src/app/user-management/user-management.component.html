@@ -4,7 +4,11 @@
             <div class="heading">User Details</div>
             <div class="search__container">
                 <div class="search__bar">
-                    <input placeholder="Search User ID" type="text" (keyup)="searchCat($event)" id="search" autocomplete="off" class="search" />
+                    <input placeholder="Search User ID" type="text" (keyup)="searchCat($event)" id="search"
+                        autocomplete="off" class="search" />
+                        <div class="search_icon">
+                            <img src="../../assets/search_img.png" alt="">
+                        </div>
                 </div>
             </div>
         </div>
@@ -42,27 +46,23 @@
         </table>
         <div *ngIf="usersList.length === 0" class="empty-view">
             <div class="content-box">
-              <img src="assets/empty-products.svg" alt="Empty View" />
-              <div class="fs-16 fw-600 mt-3">No User Available</div>
-              <p class="fs-12 mt-2">Currently Your User List is Empty!</p>
+                <img src="assets/empty-products.svg" alt="Empty View" />
+                <div class="fs-16 fw-600 mt-3">No User Available</div>
+                <p class="fs-12 mt-2">Currently Your User List is Empty!</p>
             </div>
-          </div>
+        </div>
         <div class="pagination_alignment">
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item">
                         <div class="page-link" (click)="counter(false)" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
-                            <!-- <span class="sr-only">Previous</span> -->
                         </div>
                     </li>
                     <li class="page-item"><a class="page-link">{{count}}</a></li>
-                    <!-- <li class="page-item"><a class="page-link">2</a></li>
-                    <li class="page-item"><a class="page-link">3</a></li> -->
                     <li class="page-item">
                         <div class="page-link" (click)="counter(true)" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
-                            <!-- <span class="sr-only">Next</span> -->
                         </div>
                     </li>
                 </ul>
