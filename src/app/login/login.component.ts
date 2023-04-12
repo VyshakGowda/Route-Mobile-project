@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(DialogAnimationsExampleDialog, {
-      width: '250px'
+      width: '500px'
     });
     
 
